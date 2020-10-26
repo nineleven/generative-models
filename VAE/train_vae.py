@@ -3,6 +3,8 @@ import torch.nn as nn
 
 from model_vae import VariationalAutoencoder
 
+import numpy as np
+
 import matplotlib.pyplot as plt
 
 

@@ -3,6 +3,8 @@ import torch.nn as nn
 
 from model_cvae import ConditionalVAE
 
+import numpy as np
+
 import matplotlib.pyplot as plt
 
 
