@@ -88,7 +88,6 @@ def generator_step(generator, discriminator, optimizer, batch_size, criterion, d
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
-    optimizer.zero_grad()
     
     return loss.item(), accuracy.item()
 
@@ -112,6 +111,5 @@ def discriminator_step(generator, discriminator, optimizer, batch, criterion, de
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
-    optimizer.zero_grad()
     
     return loss.item(), accuracy.item()
